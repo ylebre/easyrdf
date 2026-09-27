@@ -978,14 +978,14 @@ class Turtle extends Ntriples
                     $localName .= $c;
                 }
                 $c = $this->read();
-            }
 
-            // Last char of name must not be a dot
-            if (mb_substr($localName, -1) === '.') {
-                $localName = substr_replace($localName, '', -1);
-                $this->unread($c); // step back
-                $this->unread('.'); // return dot to input buffer
-                $c = $this->read(); // read, because below the unread($c) is done for all cases
+                // Last char of name must not be a dot, so we peek the next
+                // character to make sure the next one is a name character,
+                // and if not, break the loop early.
+                $nextChar = $this->peek();
+                if ($c === '.' && !self::isNameChar($nextChar)) {
+                    break;
+                }
             }
         }
 

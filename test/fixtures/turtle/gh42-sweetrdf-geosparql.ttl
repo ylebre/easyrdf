@@ -1,0 +1,18 @@
+@prefix : <#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix spec11: <http://www.example.org/spec11#> .
+
+# copied from line 99 - 110 of your ontology file
+:gmlLiteral
+	a rdfs:Datatype ;
+	rdfs:isDefinedBy
+		: ,
+		<http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/gml-literal> ,
+		<http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/gml-literal> ;
+	skos:definition """A GML serialization of a Geometry object."""@en ;
+	rdfs:seeAlso <https://portal.ogc.org/files/?artifact_id=20509> ;
+	skos:prefLabel "GML Literal"@en ;
+	skos:example
+		spec11:B.1.2.4 ;
+.

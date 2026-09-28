@@ -69,6 +69,7 @@ class SparqlqueryformTest extends TestCase
                     '  ?country rdf:type dbo:Country . '.
                     '  ?country rdfs:label ?label .'.
                     '  FILTER ( lang(?label) = "en" ) '.
+                    '  FILTER CONTAINS(LCASE(STR(?label)), "3g")'.
                     '} ORDER BY ?label LIMIT 5',
             ]
         );
@@ -87,6 +88,7 @@ class SparqlqueryformTest extends TestCase
                     '  ?country rdf:type dbo:Country . '.
                     '  ?country rdfs:label ?label .'.
                     '  FILTER ( lang(?label) = "en" ) '.
+                    '  FILTER CONTAINS(LCASE(STR(?label)), "3g")'.
                     '} ORDER BY ?label LIMIT 5',
                 'text' => 1,
             ]

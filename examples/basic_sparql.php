@@ -40,9 +40,11 @@ $result = $sparql->query(
         ?country rdf:type dbo:Country .
         ?country rdfs:label ?label .
         FILTER ( lang(?label) = "en" )
+        FILTER CONTAINS(LCASE(STR(?label)), "3g")
     }
     ORDER BY ?label LIMIT 10'
 );
+
 foreach ($result as $row) {
     echo '<li>'.link_to($row->label, $row->country)."</li>\n";
 }

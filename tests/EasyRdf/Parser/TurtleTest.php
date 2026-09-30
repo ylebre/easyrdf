@@ -659,4 +659,14 @@ class TurtleTest extends TestCase
             $this->baseUri.'issue/74'
         );
     }
+
+    /**
+     * Error parsing GeoSPARQL TTL
+     *
+     * @see https://github.com/sweetrdf/easyrdf/issues/42
+     */
+    public function testIssue42()
+    {
+        $this->turtleTestCase('gh42-sweetrdf-geosparql');
+    }
 }

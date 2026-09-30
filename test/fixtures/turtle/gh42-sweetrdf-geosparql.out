@@ -1,0 +1,8 @@
+<http://www.w3.org/2001/sw/DataAccess/df1/tests/gh42-sweetrdf-geosparql.ttl#gmlLiteral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.w3.org/2001/sw/DataAccess/df1/tests/gh42-sweetrdf-geosparql.ttl#gmlLiteral> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/gml-literal> .
+<http://www.w3.org/2001/sw/DataAccess/df1/tests/gh42-sweetrdf-geosparql.ttl#gmlLiteral> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/gml-literal> .
+<http://www.w3.org/2001/sw/DataAccess/df1/tests/gh42-sweetrdf-geosparql.ttl#gmlLiteral> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2001/sw/DataAccess/df1/tests/gh42-sweetrdf-geosparql.ttl#> .
+<http://www.w3.org/2001/sw/DataAccess/df1/tests/gh42-sweetrdf-geosparql.ttl#gmlLiteral> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://portal.ogc.org/files/?artifact_id=20509> .
+<http://www.w3.org/2001/sw/DataAccess/df1/tests/gh42-sweetrdf-geosparql.ttl#gmlLiteral> <http://www.w3.org/2004/02/skos/core#definition> "A GML serialization of a Geometry object."@en .
+<http://www.w3.org/2001/sw/DataAccess/df1/tests/gh42-sweetrdf-geosparql.ttl#gmlLiteral> <http://www.w3.org/2004/02/skos/core#example> <http://www.example.org/spec11#B.1.2.4> .
+<http://www.w3.org/2001/sw/DataAccess/df1/tests/gh42-sweetrdf-geosparql.ttl#gmlLiteral> <http://www.w3.org/2004/02/skos/core#prefLabel> "GML Literal"@en .
